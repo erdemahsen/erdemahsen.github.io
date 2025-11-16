@@ -1,13 +1,13 @@
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 import './App.css'
+import Header from "./components/Header"
+import About from "./components/About"
 
 function App() {
-
   return (
     <>
-      <div>
-        <h1>Hi, this is Ömer Erdem Ahsen</h1>
-      </div>
+      <Header/>
+      <About/>
     </>
   )
 }
