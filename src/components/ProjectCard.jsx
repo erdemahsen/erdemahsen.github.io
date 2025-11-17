@@ -13,7 +13,7 @@ export default function ProjectCard({ project }) {
       initial={{  opacity: 0 }}
       animate={{  opacity: 1 }}
       transition={{ duration: 0.15 }}
-      whileHover={{ y: -5, scale:1.00}}
+      whileHover={{ y: 0, scale:1.03}}
     >
       {image && <img src={image} alt={title} />}
       <h2>{title}</h2>

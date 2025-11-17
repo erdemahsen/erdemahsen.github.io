@@ -1,5 +1,6 @@
 import { motion } from "motion/react"
 import Projects from "./Projects"
+import TechStack from "./TechStack"
 
 export default function About()
 {
@@ -10,7 +11,12 @@ export default function About()
             transition={{ duration: 0.8, ease: "easeOut" }}
         >
             <p>I’m a Software Engineer who graduated from METU with a degree in Computer Engineering in 2025. My passion lies in building high-impact applications, with a strong focus on full-stack development, mobile applications, and applied AI.</p>
-            <Projects/>
+
+            <div className="projects-and-techstack">
+                <Projects/>
+                <TechStack/>
+            </div>
+
         </motion.div>
     )
 }
