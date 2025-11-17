@@ -12,8 +12,8 @@ export default function ProjectCard({ project }) {
       className="card"
       initial={{  opacity: 0 }}
       animate={{  opacity: 1 }}
-      transition={{ duration: 0.1 }}
-      whileHover={{ y: -5}}
+      transition={{ duration: 0.15 }}
+      whileHover={{ y: -5, scale:1.00}}
     >
       {image && <img src={image} alt={title} />}
       <h2>{title}</h2>
