@@ -7,7 +7,6 @@ export default function TechStack() {
   const tech = [
     { name: "React", icon: <FaReact size={48} /> },
     { name: "Flutter", icon: <FaFlutter size={48} /> },
-    { name: "React Native", icon: <FaReact size={48} /> },
     { name: "Django", icon: <SiDjango size={48} /> },
     { name: "LLMs / AI", icon: <SiOpenai size={48} /> },
     { name: "PostgreSQL", icon: <SiPostgresql size={48} /> },

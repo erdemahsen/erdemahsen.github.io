@@ -1,6 +1,7 @@
 import { motion } from "motion/react"
 import Projects from "./Projects"
 import TechStack from "./TechStack"
+import Experiences from "./Experiences"
 
 export default function About()
 {
@@ -12,9 +13,12 @@ export default function About()
         >
             <p>I’m a Software Engineer who graduated from METU with a degree in Computer Engineering in 2025. My passion lies in building high-impact applications, with a strong focus on full-stack development, mobile applications, and applied AI.</p>
 
-            <div className="projects-and-techstack">
+            <div className="projects-and-left-side">
+                <div className="left-side">
+                    <Experiences/>
+                    <TechStack/>
+                </div>
                 <Projects/>
-                <TechStack/>
             </div>
 
         </motion.div>

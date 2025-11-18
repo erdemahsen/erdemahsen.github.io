@@ -9,7 +9,7 @@ export default function ProjectCard({ project }) {
 
   return (
     <motion.div 
-      className="card"
+      className="project-card"
       initial={{  opacity: 0 }}
       animate={{  opacity: 1 }}
       transition={{ duration: 0.15 }}
