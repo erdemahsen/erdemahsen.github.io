@@ -94,13 +94,18 @@ header {
   box-shadow: 0 4px 20px rgba(0,0,0,0.3);
 }
 
-.experiences{
+.experiences {
+  display: flex;
+  flex-direction: column;
   align-items: center;
   background-color: #565656;
   border-radius: 24px;
   max-width: 540px;
-  height: 240px;
+  height: 240px; 
+  padding: 10px 0;
+  position: relative; 
 }
+
 
 .experience-card {
   background-color: #2d2d2d;
@@ -139,4 +144,45 @@ header {
   font-size: 0.9em;
   line-height: 1.4;
   color: #e0e0e0;
+}
+
+
+.switcher {
+  display: flex;
+  gap: 14px;
+  justify-content: center;
+  position: absolute;
+  bottom: 10px;
+  left: 50%; 
+  transform: translateX(-50%); 
+}
+
+.nav-btn {
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  background: none;   
+  border: none; 
+}
+
+.dots {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}
+
+.dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: gray;
+  transition: 0.2s ease;
+}
+
+.dot.active {
+  background: white;
+  transform: scale(1.2);
 }

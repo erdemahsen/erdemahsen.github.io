@@ -2,6 +2,8 @@ import { motion } from "motion/react"
 import ExperienceCard from "./ExperienceCard"
 import { experienceData } from "../data";
 import { useState } from "react"
+import { FaChevronLeft, FaChevronRight } from "react-icons/fa";
+
 
 
 export default function Experiences() {
@@ -25,14 +27,30 @@ export default function Experiences() {
       transition={{ duration: 0.8 }}
     >
       <h2>Experiences</h2>
-      <div className="switcher">
-        <button onClick={prev}>Previous</button>
-        <button onClick={next}>Next</button>
-      </div>
 
       {experienceData.map((experience) => (
         experience.id === index+1 && <ExperienceCard key={experience.id} experience={experience} />
       ))}
+
+
+      <div className="switcher">
+        <button onClick={prev} className="nav-btn">
+          <FaChevronLeft size={20} />
+        </button>
+        <div className="dots">
+    {experienceData.map((_, i) => (
+      <span 
+        key={i} 
+        className={`dot ${index === i ? "active" : ""}`}
+      ></span>
+    ))}
+  </div>
+        <button onClick={next} className="nav-btn">
+          <FaChevronRight size={20} />
+        </button>
+      </div>
+
+      
 
     </motion.div>
   );
