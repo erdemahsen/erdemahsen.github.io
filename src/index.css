@@ -186,3 +186,22 @@ header {
   background: white;
   transform: scale(1.2);
 }
+
+footer {
+  position: fixed; 
+  bottom: 0;
+  width: 100%;
+
+  color: white;
+  text-align: center;
+  padding: 10px 0;
+  box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
+  z-index: 100; 
+}
+
+.footer-links {
+  color: white;
+  display: flex; /* 1. Turn it into a flex container */
+  justify-content: center; /* 2. Center the icons horizontally */
+  gap: 20px; /* 3. Set the spacing between the flex items (the <a> tags) */
+}

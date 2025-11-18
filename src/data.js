@@ -28,7 +28,7 @@ export const experienceData = [
   {
     id: 1,
     company: "Fame Crypt",
-    duration: "May 2025 - Oct 2025",
+    duration: "Mar 2025 - July 2025",
     title: "Part-time Software Engineer",
     location: "Ankara, Turkey",
     description: "Developed an LLM-based assistant with capabilities to analyze uploaded files and engage in interactive conversations. Built the system using a React frontend, Django backend, and integrated both Ollama and Gemini models."
@@ -39,7 +39,7 @@ export const experienceData = [
     duration: "Jul 2024 - Sep 2024",
     title: "Machine Learning Intern",
     location: "Berlin, Germany",
-    description: "Worked on a website featuring a chatbot that teaches AI topics using AI, integrating ChatGPT and Llama APIs. Developed backend functionality using Flask and implemented frontend features with Vue.js. Utilized vector embeddings for chatbot functionality."
+    description: "Worked on a website featuring a chatbot that teaches AI topics using AI, integrating ChatGPT and Llama APIs. Developed backend functionality using Flask and implemented frontend features with Vue.js."
   },
   {
     id: 3,
@@ -55,6 +55,6 @@ export const experienceData = [
     duration: "Feb 2022 - Aug 2022",
     title: "Star Research Intern",
     location: "Kocaeli, Turkey",
-    description: "Focused on testing and evaluating various matrix multiplication algorithms in C."
+    description: "Focused on testing and evaluating various matrix multiplication algorithms such as Naive Matrix Multiplication, Divide and Conquer, and Strassen’s Algorithm in C."
   }
 ];
