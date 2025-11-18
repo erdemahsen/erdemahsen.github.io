@@ -4,8 +4,8 @@ import { SiGoogleplay } from "react-icons/si";
 import { SiAppstore } from "react-icons/si";
 import { TbWorld } from "react-icons/tb";
 
-export default function ExperienceCard({  }) {
-
+export default function ExperienceCard({ experience }) {
+    const { id,company,duration,title,description} = experience
     return (
       <motion.div 
         className="experience-card"
@@ -15,13 +15,13 @@ export default function ExperienceCard({  }) {
         whileHover={{ y: 0, scale:1.03}}
       >
           <div className="experience-header">
-              <h3>{"Fame Crypt"}</h3> 
-              <i>{"May 2025 - Oct 2025"}</i>
+              <h3>{company}</h3> 
+              <i>{duration}</i>
           </div>
           
-          <p className="job-title">{"Part time Software Engineer"}</p>
+          <p className="job-title">{title}</p>
           
-          <p className="job-description">{"Developed an LLM-based assistant with capabilities to analyze uploaded files and engage in interactive conversations. Built the system using a React frontend, Django backend, and integrated both Ollama and Geminimodels."}</p>
+          <p className="job-description">{description}</p>
       </motion.div>
     );
   }

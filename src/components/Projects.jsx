@@ -1,5 +1,5 @@
 import ProjectCard from "./ProjectCard"
-import { projectsData } from "../projectsData"
+import { projectsData } from "../data"
 import { motion } from "motion/react"
 
 export default function Projects() {
